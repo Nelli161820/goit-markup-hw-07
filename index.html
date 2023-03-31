@@ -18,10 +18,13 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/mobile.css" />
+		<link rel="stylesheet" href="./css/tablet.css" />
+		<link rel="stylesheet" href="./css/desktop.css" />
 	</head>
 
 	<body class="body">
-		<!-- Top line -->
+		<!-- Top line HEADER-->
 		<header class="header-topline">
 			<div class="container blok-header">
 				<nav class="navigation">
@@ -33,6 +36,65 @@
 						<li><a href="" class="nav-link link ">Contacts </a></li>
 					</ul>
 				</nav>
+				<button type="button" class="mobile-menu-open js-open-menu" >
+					<svg class="mobile-menu-open-icon" width="32" height="22">
+						<use href="./images/burger.svg#icon-burger"></use>
+					</svg>
+				</button>
+				<div class="mobile-menu js-menu-container" >
+					<div class="container mobil-menu-container" >
+					<button class="mobile-menu-close-btn js-close-menu" type="button" >
+						<svg class="mobile-menu-open-close-icon" width="8" height="8">
+							<use href="./images/icons.svg#icon-close-black"></use>
+						</svg>
+					</button>
+				</div>
+				<ul class="mobile-nav">
+					<li><a href="" class="mobile-nav-link link"> Studio</a></li>
+					<li><a href="./portfolio.html" class="mobile-nav-link link">Portfolio </a></li>
+					<li><a href="" class="mobile-nav-link link-color link">Contacts </a></li>
+				</ul>
+				<address class="mobile-contact">
+					<ul class="mobile-contact-list">
+						<li><a href="tel:+110001111111" class="mobil-phone-link link"> +11 (000) 111-11-11</a></li>
+						<li><a href="mailto:info@devstudio.com" class="mobile-email-link link"> info@devstudio.com</a></li>
+						
+					</ul>
+				</address>
+				<ul class="mobile-social-list">
+					<li class="mobile-social-item">
+						<a href="" class="mobile-social">
+							<svg class="mobile-social-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="mobile-social-item">
+						<a href="" class="mobile-social">
+							<svg class="mobile-social-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="mobile-social-item">
+						<a href="" class="mobile-social">
+							<svg class="mobile-social-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="mobile-social-item">
+						<a href="" class="mobile-social">
+							<svg class="mobile-social-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+
+
+
+				</div>
 				<address class="contact">
 					<ul class="contact-list">
 						<li><a href="mailto:info@devstudio.com" class="contact-link link"> info@devstudio.com</a></li>
@@ -52,7 +114,7 @@
 				</div>
 			</section>
 			<!-- feature -->
-			<section class="feature section">
+			<section class="feature section"> 
 				<div class="container feature-blok">
 					<h2 class="feature-title">Advantage</h2>
 					<ul class="feature-list">
@@ -113,15 +175,20 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> 
 			<!-- section-activity -->
 			<section class="section-activity">
 				<div class="container">
 					<h2 class="activity-title">What are we doing</h2>
 					<ul class="activity-list">
 						<li class="activity-item">
+							<picture>
+								<source
+								srcset="./images/img1-min.jpg, ./images/img1@2x-min.jpg"
+								media="(min-width: 1200px)">
 							<img src="./images/img1.jpg" alt="computer" width="360" class="activity-pic" />
-						</li>
+							</picture>
+							</li>
 						<li class="activity-item">
 							<img src="./images/img2.jpg" alt="mobil phone" width="360" class="activity-pic" />
 						</li>
@@ -130,15 +197,24 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> 
 			<!-- section-team -->
 			<section class="team-light-bg section">
 				<div class="container">
 					<h2 class="team-title">Our Team</h2>
 					<ul class="team-list">
 						<li class="team-inner">
+							<picture>
+								<source srcset="./images/team1_mob.img-min.jpg 1x, ./images/team1_mob.img@2x-min.jpg 2x" 
+								media="min-width: 1200px"/>
+								<source	srcset="./images/team1_mob.img-min.jpg 1x, ./images/team1_mob.img@2x-min.jpg 2x" 
+								media="min-width: 768px"/>
+								<source srcset="./images/team1_mob.img-min.jpg 1x, ./images/team1_mob.img@2x-min.jpg 2x" 
+								media="min-width: 480px"/>
 							<img src="./images/team_1.jpg" alt="Mark" width="264" class="team-pic" />
-							<div class="team-text">
+							
+							</picture>
+								<div class="team-text">
 								<h3 class="team-subtitle">Mark Guerrero</h3>
 								<p class="team-item">Product Designer</p>
 								<ul class="social">
@@ -174,7 +250,16 @@
 							</div>
 						</li>
 						<li class="team-inner">
-							<img src="./images/team_2.jpg" alt="Tom" width="264" class="team-pic" />
+							<picture>
+								<source srcset="./images/team2_mob.img-min.jpg 1x, ./images/team2_mob.img@2x-min.jpg 2x" 
+								media="min-width: 1200px"/>
+								<source	srcset="./images/team2_mob.img-min.jpg 1x, ./images/team2_mob.img@2x-min.jpg 2x" 
+								media="min-width: 768px"/>
+								<source srcset="./images/team2_mob.img-min.jpg 1x, ./images/team2_mob.img@2x-min.jpg 2x" 
+								media="min-width: 480px"/>
+								<img src="./images/team_2.jpg" alt="Tom" width="264" class="team-pic" />
+							</picture>
+							
 							<div class="team-text">
 								<h3 class="team-subtitle">Tom Ford</h3>
 								<p class="team-item">Frontend Developer</p>
@@ -211,7 +296,16 @@
 							</div>
 						</li>
 						<li class="team-inner">
+							<picture>
+								<source srcset="./images/team3_mob.img-min.jpg 1x, ./images/team3_mob.img@2x-min.jpg 2x" 
+								media="min-width: 1200px">
+								<source	srcset="./images/team3_mob.img-min.jpg 1x, ./images/team3_mob.img@2x-min.jpg 2x" 
+								media="min-width: 768px">
+								<source srcset="./images/team3_mob.img-min.jpg 1x, ./images/team3_mob.img@2x-min.jpg 2x" 
+								media="min-width: 480px">
 							<img src="./images/team_3.jpg" alt="Camila" width="264" class="team-pic" />
+						</picture>
+							
 							<div class="team-text">
 								<h3 class="team-subtitle">Camila Garcia</h3>
 								<p class="team-item">Marketing</p>
@@ -287,7 +381,7 @@
 					</ul>
 				</div>
 			</section>
-			<!-- customer -->
+			<!-- <--customer --> 
 			<section class="customers section">
 				<div class="container">
 					<h2 class="customers-title">Customers</h2>
@@ -343,15 +437,15 @@
 </li>
 </ul>
 				</div>
-			</section>
+			</section> 
 		</main>
 		<!-- Page footer -->
 
 
 		<footer class="blok-footer">
-			<div class="container">
+			<div class="container container-footer">
 				<div class="blok-logo-social">
-					<div>
+					<div class="blok-name">
 					<div class="logo-blok">
 					<a href="./index.html" class="footer-logo link">Web<span class="footer-link">Studio</span> </a>
 				</div>
@@ -422,10 +516,10 @@
 		</div>
 			
 			</div>
-		</footer>
+		</footer> 
 		<!-- modal window -->
 		<div class="backdrop is-hidden" data-modal>
-			<div class="modal">
+				<div class="modal">
 				<button type="button" class="modal-btn" data-modal-close>
 						<svg class="icon-close-black" width="8" height="8">
 						<use href="./images/icons.svg#icon-close-black"></use>
@@ -519,7 +613,8 @@
 		</form>
 				</div>
 		</div>
-		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
+		<script src="./js/modal.js"></script>  
 	</body>
 </html>
 
