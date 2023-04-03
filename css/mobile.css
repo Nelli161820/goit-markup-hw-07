@@ -1,58 +1,12 @@
-:root {
-	--main-text-color: #ffffff;
-	--title-text-color: #2e2f42;
-	--subtitle-text-color: #434455;
-}
 
-body {
-	font-family: "Roboto", sans-serif;
-	font-style: normal;
-	color: var(--main-text-color);
-	background-color: #ffffff;
-}
-
-ul,
-li {
-	text-decoration: none;
-	list-style: none;
-	margin: 0;
-	margin: 0;
-	padding-left: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	margin: 0;
-	margin: 0;
-}
-.section {
-	padding-top: 120px;
-	padding-bottom: 120px;
-}
-.link {
-	text-decoration: none;
-	list-style: none;
-}
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-
-.container {
-	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
 /* HEADER */
+@media screen and (max-width: 480px)  {
+	.container {
+	width: 480px;
+	outline: 1px solid red;
 
+}
+}
 
 @media screen and (max-width: 480px) {
 	.nav-list {
@@ -61,18 +15,7 @@ img {
 	.contact {
 		display: none;
 	}
-	.mobile-nav {
-		display: none;
-	}
-	.mobile-contact {
-		display: none;
-	}
-	.mobile-social-list {
-		display: none;
-	}
-    .container {
-        max-width: 428px;
-    }
+	    
     .logo {
 		padding-left: 16px;
 	}
@@ -84,12 +27,7 @@ img {
 	}
 }  
 
-@media screen and (min-width: 480px)  {
-		.container {
-		max-width: 428px;
-		outline: 1px solid red;
-	}
-}
+
 	.logo {
 		padding-left: 16px;
 	}
@@ -238,42 +176,47 @@ img {
 	}
 
 
-@media screen and (min-width: 481px) {
-	.nav-list {
-		display: none;
-	}
-	.contact {
-		display: none;
-	}
-} 
+
 
 /* HERO */
 
-
-	
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  		screen and (min-resolution: 192dpi) and (max-width: 767px),
-  		screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 320px),
+  		screen and (min-resolution: 192dpi) and (max-width: 320px),
+  		screen and (min-resolution: 2dppx) and (max-width: 320px) {
 
 	.hero-section {
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_mob.img@2x-min.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 320px;
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_mob.img-min.jpg");
 	}
 	.hero-title {
 		font-size: 36px;
-		line-height: 1.11;
-		text-align: center;
-		letter-spacing: 0.02em;
-		max-width: 320px;
+		width: 320px;
+					}
 			}
 
-}
-
+			@media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
+			screen and (min-resolution: 192dpi) and (max-width: 480px),
+			screen and (min-resolution: 2dppx) and (max-width: 480px) {
+  
+	  .hero-section {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 480px;
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_mob.img@2x-min.jpg");
+	  }
+	  .hero-title {
+		  font-size: 36px;
+		  width: 320px;
+					  }
+			  }
+  
 /* modal */
 
 @media screen and (max-width: 390px){
 .modal {
 	width: 100%;
-	
 	margin-left: auto;
 	margin-right: auto;
 
@@ -286,7 +229,7 @@ img {
 }
 /* feature */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 480px) {
 .blok-feature-icon {
 	display: none;
 }
@@ -330,7 +273,7 @@ margin-bottom: 72px;
 
 /* section-activity */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 480px) {
 
 .section-activity {
 	display: none;
@@ -339,7 +282,7 @@ margin-bottom: 72px;
 
 
 /* section-team */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
 
 	.team-list {
 		display: flex;
@@ -351,7 +294,7 @@ margin-bottom: 72px;
 		}
 	}
 /* customers */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
 	
 		.customers-list {
 			display: flex;
@@ -366,7 +309,7 @@ margin-bottom: 72px;
 
 		/* FOOTER */
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 480px) {
 			.blok-footer {
 				display: flex;
 				flex-direction: column;
@@ -385,7 +328,7 @@ margin-bottom: 72px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				width: 398px;
+				max-width: 398px;
 				margin: 72px 15px 96px 15px;
 				
 			}

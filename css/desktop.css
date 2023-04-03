@@ -2,13 +2,24 @@
 
 @media screen and (min-width: 1200px) {
 	.container {
-		max-width: 1158px;
+		width: 1158px;
 	}
 	.contact-list {
 	display: flex;
 	flex-direction: row;
 	gap: 40px;
 }
+.nav-list {
+	display: flex;
+	padding: 0px;
+	gap: 40px;
+	position: relative;
+	padding: 24px 0; 
+}
+.contact {
+	margin-left: auto;
+}
+
 }
 	
 
@@ -16,12 +27,19 @@
 /* section-hero */
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) 
-{
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .hero-section {
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_mob.img@2x-min.jpg");
+	background-size: 1200px;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
 }
+.hero-title {
+	width: 496px;
+	font-size: 56px;
+	line-height: 1.07;
 }
+
+}
+
 
 
 /* modal */
@@ -60,6 +78,18 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px)
 .section {
 	padding-top: 120px;
 	padding-bottom: 120px;
+}
+
+.feature-text {
+	font-weight: 400;
+	
+}
+.feature-subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--title-text-color);
 }
 }
 /* section-activity */
@@ -102,14 +132,20 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px)
 @media screen and (min-width: 1200px) {
 	.input-email {
 		margin: 0px 159px 132px 80px; 
-		width: 0px;
+		width: 453px;
 				
 	}
-	.container-footer {
+	.blok-logo-social {
+		display: flex;
 		flex-wrap: nowrap;
 }
 	.footer-social {
 		margin-left: 120px;
 }
+.container-footer {
+	width: 1158px;
+	flex-wrap: nowrap;
 }
 
+	
+}
