@@ -17,9 +17,7 @@
 	.contact-list {
 		flex-direction: column;
 		gap: 12px;
-		padding-top: 16px;
-		padding-right: 16px;
-		padding-bottom: 16px;
+		
 }
 	.contact-link {
 		font-family: "Roboto";
@@ -47,7 +45,7 @@
   		screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 	.hero-section {
-		background-size: 768px;
+		background-size: covenr;
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_tab_@2x.jpg");
 	}
 }
@@ -67,11 +65,7 @@
 	.feature-list {
 		flex-wrap: wrap;
 	}
-	.section {
-		padding-top: 96px;
-		padding-bottom: 96px;
-	}
-	
+		
 	.feature-item {
 		width: calc((100% - 24px) / 2);
 
@@ -120,11 +114,13 @@
 			margin-right: 24px;
 			margin-bottom: 62px;
 		}
-	}
+	
 	
 	/* customers */
 @media screen and (min-width: 768px) {
-	
+	.customers {
+		max-width: 582px;
+	}
 	.customers-list {
 			display: flex;
 			flex-wrap: wrap;

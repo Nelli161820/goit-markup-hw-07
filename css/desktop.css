@@ -29,7 +29,10 @@
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .hero-section {
-	background-size: 1200px;
+	max-width: 1440px; 
+	margin-left: auto; 
+	margin-right: auto;
+	background-size: covenr;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
 }
 .hero-title {
@@ -116,6 +119,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
 	
+	.customers {
+	padding-top: 130px;
+	max-width: none;
+}
 	.customers-list {
 		display: flex;
 		flex-wrap: nowrap;
@@ -123,7 +130,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 					}
 
 	.customers-item {
-		width: 168px;
+		height: 88px;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		fill: #8e8f99;
 				}
 	}
 
