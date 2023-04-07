@@ -58,7 +58,6 @@ img {
 	border-bottom: 1px solid #e7e9fc;
 }
 .container {
-	width: 1158px;
 	margin: 0 auto;
 	outline: 1px solid red;
 	padding-left: 15px;
@@ -485,10 +484,10 @@ span {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-.feature-list {
+/* .feature-list {
 	display: flex;
 	flex-direction: row;
-}
+} */
 .feature-item {
 	display: flex;
 	flex-direction: column;
@@ -650,9 +649,9 @@ span {
 }
 
 /* customers */
-.customers {
+/* .customers {
 	padding-top: 130px;
-}
+} */
 .customers-title {
 	font-family: "Roboto";
 	font-style: normal;
@@ -666,7 +665,7 @@ span {
 	margin-bottom: 72px;
 }
 
-
+/* 
 .customers-item {
 	height: 88px;
 	box-sizing: border-box;
@@ -674,7 +673,7 @@ span {
 	justify-content: center;
 	align-items: center;
 	fill: #8e8f99;
-}
+} */
 
 .customers-icon {
 	fill: #8e8f99;
