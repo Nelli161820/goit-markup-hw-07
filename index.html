@@ -48,11 +48,10 @@
 							<use href="./images/icons.svg#icon-close-black"></use>
 						</svg>
 					</button>
-				</div>
 				<ul class="mobile-nav">
-					<li><a href="" class="mobile-nav-link link"> Studio</a></li>
+					<li><a href="" class="mobile-nav-link link-color link"> Studio</a></li>
 					<li><a href="./portfolio.html" class="mobile-nav-link link">Portfolio </a></li>
-					<li><a href="" class="mobile-nav-link link-color link">Contacts </a></li>
+					<li><a href="" class="mobile-nav-link link">Contacts </a></li>
 				</ul>
 				<address class="mobile-contact">
 					<ul class="mobile-contact-list">
@@ -91,10 +90,8 @@
 						</a>
 					</li>
 				</ul>
-
-
-
-				</div>
+			</div>	
+			</div>
 				<address class="contact">
 					<ul class="contact-list">
 						<li><a href="mailto:info@devstudio.com" class="contact-link link"> info@devstudio.com</a></li>
@@ -182,18 +179,26 @@
 					<h2 class="activity-title">What are we doing</h2>
 					<ul class="activity-list">
 						<li class="activity-item">
-							<picture>
-								<source
-								srcset="./images/img1-min.jpg, ./images/img1@2x-min.jpg"
-								media="(min-width: 1200px)">
-							<img src="./images/img1.jpg" alt="computer" width="360" class="activity-pic" />
-							</picture>
+							<img
+								srcset="./images/img1-min.jpg 1x, ./images/img1@2x-min.jpg 2x"
+								media="(min-width: 1200px)"
+							 	src="./images/img1.jpg" alt="computer" width="360" class="activity-pic" />
+							
 							</li>
 						<li class="activity-item">
-							<img src="./images/img2.jpg" alt="mobil phone" width="360" class="activity-pic" />
+							<img
+								srcset="./images/img2-min.jpg 1x, ./images/img2@2x-min.jpg 2x"
+								media="(min-width: 1200px)"
+							 	src="./images/img2.jpg" alt="mobil phone" width="360" class="activity-pic" />
+						
 						</li>
 						<li class="activity-item">
+							<picture>
+								<source
+								srcset="./images/img3-min.jpg 1x, ./images/img3@2x-min.jpg 2x"
+								media="(min-width: 1200px)">
 							<img src="./images/img3.jpg" alt="mobil phone and laptop" width="360" class="activity-pic" />
+						</picture>
 						</li>
 					</ul>
 				</div>
@@ -205,14 +210,13 @@
 					<ul class="team-list">
 						<li class="team-inner">
 							<picture>
-								<source srcset="./images/team1_mob.img-min.jpg 1x, ./images/team1_mob.img@2x-min.jpg 2x" 
-								media="min-width: 1200px"/>
-								<source	srcset="./images/team1_mob.img-min.jpg 1x, ./images/team1_mob.img@2x-min.jpg 2x" 
-								media="min-width: 768px"/>
-								<source srcset="./images/team1_mob.img-min.jpg 1x, ./images/team1_mob.img@2x-min.jpg 2x" 
-								media="min-width: 480px"/>
-							<img src="./images/team_1.jpg" alt="Mark" width="264" class="team-pic" />
-							
+								<source srcset="./images/team1-desk-img-min.jpg 1x, ./images/team1-desk-img@2x-min.jpg 2x" 
+								media="(min-width: 1200px)"/>
+								<source	srcset="./images/team1-tabl-img-min.jpg 1x, ./images/team1-tabl-img@2x-min.jpg 2x" 
+								media="(min-width: 768px)"/>
+								<source srcset="./images/team1_mob-img-min.jpg 1x, ./images/team1_mob-img@2x-min.jpg 2x" 
+								media="(min-width: 480px)"/>
+								<img src="./images/team_1.jpg" alt="Mark" width="264" class="team-pic" />
 							</picture>
 								<div class="team-text">
 								<h3 class="team-subtitle">Mark Guerrero</h3>
@@ -251,12 +255,12 @@
 						</li>
 						<li class="team-inner">
 							<picture>
-								<source srcset="./images/team2_mob.img-min.jpg 1x, ./images/team2_mob.img@2x-min.jpg 2x" 
-								media="min-width: 1200px"/>
-								<source	srcset="./images/team2_mob.img-min.jpg 1x, ./images/team2_mob.img@2x-min.jpg 2x" 
-								media="min-width: 768px"/>
-								<source srcset="./images/team2_mob.img-min.jpg 1x, ./images/team2_mob.img@2x-min.jpg 2x" 
-								media="min-width: 480px"/>
+								<source srcset="./images/team2-desk-img-min.jpg 1x, ./images/team2-desk-img@2x-min.jpg 2x" 
+								media="(min-width: 1200px)"/>
+								<source	srcset="./images/team2-tabl-img-min.jpg 1x, ./images/team2-tabl-img@2x-min.jpg 2x" 
+								media="(min-width: 768px)"/>
+								<source srcset="./images/team2_mob-img-min.jpg 1x, ./images/team2_mob-img@2x-min.jpg 2x" 
+								media="(min-width: 480px)"/>
 								<img src="./images/team_2.jpg" alt="Tom" width="264" class="team-pic" />
 							</picture>
 							
@@ -297,14 +301,14 @@
 						</li>
 						<li class="team-inner">
 							<picture>
-								<source srcset="./images/team3_mob.img-min.jpg 1x, ./images/team3_mob.img@2x-min.jpg 2x" 
-								media="min-width: 1200px">
-								<source	srcset="./images/team3_mob.img-min.jpg 1x, ./images/team3_mob.img@2x-min.jpg 2x" 
-								media="min-width: 768px">
-								<source srcset="./images/team3_mob.img-min.jpg 1x, ./images/team3_mob.img@2x-min.jpg 2x" 
-								media="min-width: 480px">
-							<img src="./images/team_3.jpg" alt="Camila" width="264" class="team-pic" />
-						</picture>
+								<source srcset="./images/team3-desk-img-min.jpg 1x, ./images/team3-desk-img@2x-min.jpg 2x" 
+								media="(min-width: 1200px)"/>
+								<source	srcset="./images/team3-tabl-img-min.jpg 1x, ./images/team3-tabl-img@2x-min.jpg 2x" 
+								media="(min-width: 768px)"/>
+								<source srcset="./images/team3_mob-img-min.jpg 1x, ./images/team3_mob-img@2x-min.jpg 2x" 
+								media="(min-width: 480px)"/>
+								<img src="./images/team_3.jpg" alt="Camila" width="264" class="team-pic" />
+							</picture>
 							
 							<div class="team-text">
 								<h3 class="team-subtitle">Camila Garcia</h3>
@@ -342,7 +346,16 @@
 							</div>
 						</li>
 						<li class="team-inner">
-							<img src="./images/team_4.jpg" alt="Daniel" width="264" class="team-pic" />
+							<picture>
+								<source srcset="./images/team4-desk-img-min.jpg 1x, ./images/team4-desk-img@2x-min.jpg 2x" 
+								media="(min-width: 1200px)"/>
+								<source	srcset="./images/team4-tabl-img-min.jpg 1x, ./images/team4-tabl-img@2x-min.jpg 2x" 
+								media="(min-width: 768px)"/>
+								<source srcset="./images/team4_mob-img-min.jpg 1x, ./images/team4_mob-img@2x-min.jpg 2x" 
+								media="(min-width: 480px)"/>
+								<img src="./images/team_4.jpg" alt="Daniel" width="264" class="team-pic" />
+							</picture>
+							
 							<div class="team-text">
 								<h3 class="team-subtitle">Daniel Wilson</h3>
 								<p class="team-item"> UI Designer</p>
@@ -447,7 +460,6 @@
 
 		<footer class="blok-footer">
 			<div class="container container-footer">
-				<div class="blok-logo-social">
 					<div class="blok-name">
 					<div class="logo-blok">
 					<a href="./index.html" class="footer-logo link">Web<span class="footer-link">Studio</span> </a>
@@ -516,7 +528,7 @@
 		
 			</form>
 				
-		</div>
+		
 			
 			</div>
 		</footer>

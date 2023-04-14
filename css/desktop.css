@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1200px) {
 	.container {
-		width: 1158px;
+		max-width: 1158px;
 	}
 	.contact-list {
 	display: flex;
@@ -32,7 +32,20 @@
 	
 
 }
-
+.contact-link {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--subtitle-text-color);
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 250ms;
+}
+.contact-link:hover,
+.contact-link:focus {
+	color: #404bbf;
+}
 }
 	
 
@@ -45,13 +58,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 	max-width: 1440px; 
 	margin-left: auto; 
 	margin-right: auto;
-	background-size: covenr;
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+	background-position: center;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1.jpg"), url("../images/people-office1-1.jpg");
 }
 .hero-title {
-	width: 496px;
+	max-width: 496px;
 	font-size: 56px;
 	line-height: 1.07;
+	
+}
+.button {
+	margin-top: 48px;
 }
 
 }
@@ -80,6 +97,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 	flex-wrap: nowrap;
 	display: flex;
 	flex-direction: row;
+	gap: 0;
 }
 .feature-item {
 	display: flex;
@@ -141,6 +159,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-around;
+		width: 1128px;
 					}
 
 	.customers-item {
@@ -157,14 +176,15 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
 	.input-email {
-		margin: 0px 159px 132px 80px; 
-		width: 453px;
+		
+		margin-left: auto; 
+		
 				
 	}
-	.blok-logo-social {
-		display: flex;
+	/* .blok-logo-social {
 		flex-wrap: nowrap;
-}
+		
+}  */
 	.footer-social {
 		margin-left: 120px;
 }
