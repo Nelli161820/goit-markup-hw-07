@@ -22,8 +22,8 @@
 	display: flex;
 }
 .hero-section {
-	padding-top: 118px;
-	padding-bottom: 118px;
+	padding-top: 112px;
+	padding-bottom: 112px;
 }
 .button {
 	margin-top: 36px;
@@ -71,6 +71,21 @@
 }
 
 /* hero */
+@media screen and (min-width: 768px) {
+
+	.hero-section {
+		background-size: cover;
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-tab1x-min.jpg");
+	
+	}
+	.hero-title {
+		font-size: 56px;
+		max-width: 496px;
+	}
+}
+
+
+
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   		screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -78,7 +93,7 @@
 
 	.hero-section {
 		background-size: cover;
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_tab_@2x.jpg"), url("../images/hero_tab-img-min.jpg") ;
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-tab@2x-min.jpg");
 	
 	}
 }
@@ -199,17 +214,15 @@
 		
 		
 	}
+
 	.footer-form-input {
 		width: 264px;
 	}
-	/* .input-email {
-		display: flex;
-		flex-direction: column;
-		width: 453px;
+	.input-email {
 		margin-top: 72px; 
 		
-	}  */
-	.footer-social {
+	}  
+		.footer-social {
 		
 		margin-left: 24px;
 	}

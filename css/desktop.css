@@ -51,15 +51,15 @@
 
 
 /* section-hero */
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+
+@media screen and (min-width: 1200px) {
+
 .hero-section {
 	max-width: 1440px; 
 	margin-left: auto; 
 	margin-right: auto;
 	background-position: center;
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1.jpg"), url("../images/people-office1-1.jpg");
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office1-min.jpg");
 }
 .hero-title {
 	max-width: 496px;
@@ -71,6 +71,25 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 	margin-top: 48px;
 }
 
+.hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+.hero-section {
+	max-width: 1440px; 
+	margin-left: auto; 
+	margin-right: auto;
+	background-position: center;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office@2x-min.jpg");
+
+}
 }
 
 
@@ -178,9 +197,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 	.input-email {
 		
 		margin-left: auto; 
-		
+		margin-top: 0;
 				
 	}
+	
 	/* .blok-logo-social {
 		flex-wrap: nowrap;
 		
