@@ -59,8 +59,13 @@
 	margin-left: auto; 
 	margin-right: auto;
 	background-position: center;
+	background-size: cover;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office1-min.jpg");
 }
+}
+
+
+@media screen and (min-width: 1200px) {
 .hero-title {
 	max-width: 496px;
 	font-size: 56px;
@@ -87,6 +92,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 	margin-left: auto; 
 	margin-right: auto;
 	background-position: center;
+	background-size: cover;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office@2x-min.jpg");
 
 }

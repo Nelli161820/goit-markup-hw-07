@@ -246,18 +246,20 @@
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: cover;
-					background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-mob1x-min.jpg");
+					background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-tab1x-min.jpg");
 				}
-				}
-			@media screen and (min-device-pixel-ratio: 2) and (min-width: 428px),
-			screen and (min-resolution: 192dpi) and (min-width: 428px),
-			screen and (min-resolution: 2dppx) and (min-width: 428px) {
+				} 
+			@media 
+			screen and (min-device-pixel-ratio: 2), 
+			screen and (min-resolution: 192dpi), 
+			screen and (min-resolution: 2dppx) {
   
 				.hero-section {
+					
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: cover;
-					background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-mob@2x-min.jpg");
+					background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-tab@2x-min.jpg");
 				}
 				}
 	  /* .hero-title {
